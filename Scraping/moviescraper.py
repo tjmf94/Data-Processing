@@ -6,7 +6,6 @@ This script scrapes IMDB and outputs a CSV file with highest rated movies.
 """
 
 import csv
-import re
 from requests import get
 from requests.exceptions import RequestException
 from contextlib import closing
