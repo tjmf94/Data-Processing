@@ -1,0 +1,456 @@
+Country,Region,Pop. Density (per sq. mi.),Infant mortality (per 1000 births),GDP ($ per capita) dollars
+
+Afghanistan,ASIA (EX. NEAR EAST),"48,0","163,07",700 dollars
+
+Albania,EASTERN EUROPE,"124,6","21,52",4500 dollars
+
+Algeria,NORTHERN AFRICA,"13,8",31,6000 dollars
+
+American Samoa,OCEANIA,"290,4","9,27",8000 dollars
+
+Andorra,WESTERN EUROPE,"152,1","4,05",19000 dollars
+
+Angola,SUB-SAHARAN AFRICA,"9,7","191,19",1900 dollars
+
+Anguilla,LATIN AMER. & CARIB,"132,1","21,03",8600 dollars
+
+Antigua & Barbuda,LATIN AMER. & CARIB,"156,0","19,46",11000 dollars
+
+Argentina,LATIN AMER. & CARIB,"14,4","15,18",11200 dollars
+
+Armenia,C.W. OF IND. STATES,"99,9","23,28",3500 dollars
+
+Aruba,LATIN AMER. & CARIB,unknown,"5,89",28000 dollars
+
+Australia,OCEANIA,"2,6","4,69",29000 dollars
+
+Austria,WESTERN EUROPE,"97,7","4,66",30000 dollars
+
+Azerbaijan,C.W. OF IND. STATES,"91,9","81,74",3400 dollars
+
+"Bahamas, The",LATIN AMER. & CARIB,"21,8","25,21",16700 dollars
+
+Bahrain,NEAR EAST,"1050,5","17,27",16900 dollars
+
+Bangladesh,ASIA (EX. NEAR EAST),"1023,4","62,6",1900 dollars
+
+Barbados,LATIN AMER. & CARIB,"649,5","12,5",15700 dollars
+
+Belarus,C.W. OF IND. STATES,"49,6","13,37",6100 dollars
+
+Belgium,WESTERN EUROPE,"340,0","4,68",29100 dollars
+
+Belize,LATIN AMER. & CARIB,"12,5","25,69",4900 dollars
+
+Benin,SUB-SAHARAN AFRICA,"69,8",85,1100 dollars
+
+Bermuda,NORTHERN AMERICA,"1241,0","8,53",36000 dollars
+
+Bhutan,ASIA (EX. NEAR EAST),"48,5","100,44",1300 dollars
+
+Bolivia,LATIN AMER. & CARIB,"8,2","53,11",2400 dollars
+
+Bosnia & Herzegovina,EASTERN EUROPE,"88,0","21,05",6100 dollars
+
+Botswana,SUB-SAHARAN AFRICA,"2,7","54,58",9000 dollars
+
+Brazil,LATIN AMER. & CARIB,"22,1","29,61",7600 dollars
+
+British Virgin Is.,LATIN AMER. & CARIB,"151,0","18,05",16000 dollars
+
+Brunei,ASIA (EX. NEAR EAST),"65,8","12,61",18600 dollars
+
+Bulgaria,EASTERN EUROPE,"66,6","20,55",7600 dollars
+
+Burkina Faso,SUB-SAHARAN AFRICA,"50,7","97,57",1100 dollars
+
+Burma,ASIA (EX. NEAR EAST),"69,8","67,24",1800 dollars
+
+Burundi,SUB-SAHARAN AFRICA,"290,7","69,29",600 dollars
+
+Cambodia,ASIA (EX. NEAR EAST),"76,7","71,48",1900 dollars
+
+Cameroon,SUB-SAHARAN AFRICA,"36,5","68,26",1800 dollars
+
+Canada,NORTHERN AMERICA,"3,3","4,75",29800 dollars
+
+Cape Verde,SUB-SAHARAN AFRICA,"104,4","47,77",1400 dollars
+
+Cayman Islands,LATIN AMER. & CARIB,"173,4","8,19",35000 dollars
+
+Central African Rep.,SUB-SAHARAN AFRICA,"6,9",91,1100 dollars
+
+Chad,SUB-SAHARAN AFRICA,"7,7","93,82",1200 dollars
+
+Chile,LATIN AMER. & CARIB,"21,3","8,8",9900 dollars
+
+China,ASIA (EX. NEAR EAST),"136,9","24,18",5000 dollars
+
+Colombia,LATIN AMER. & CARIB,"38,3","20,97",6300 dollars
+
+Comoros,SUB-SAHARAN AFRICA,"318,4","74,93",700 dollars
+
+"Congo, Dem. Rep.",SUB-SAHARAN AFRICA,"26,7","94,69",700 dollars
+
+"Congo, Repub. of the",SUB-SAHARAN AFRICA,"10,8","93,86",700 dollars
+
+Cook Islands,OCEANIA,"89,1",,5000 dollars
+
+Costa Rica,LATIN AMER. & CARIB,"79,8","9,95",9100 dollars
+
+Cote d'Ivoire,SUB-SAHARAN AFRICA,"54,8","90,83",1400 dollars
+
+Croatia,EASTERN EUROPE,"79,5","6,84",10600 dollars
+
+Cuba,LATIN AMER. & CARIB,"102,7","6,33",2900 dollars
+
+Cyprus,NEAR EAST,unknown,"7,18",19200 dollars
+
+Czech Republic,EASTERN EUROPE,"129,8","3,93",unknown
+
+Denmark,WESTERN EUROPE,"126,5","4,56",31100 dollars
+
+Djibouti,SUB-SAHARAN AFRICA,"21,2","104,13",1300 dollars
+
+Dominica,LATIN AMER. & CARIB,"91,4","14,15",5400 dollars
+
+Dominican Republic,LATIN AMER. & CARIB,"188,5","32,38",6000 dollars
+
+East Timor,ASIA (EX. NEAR EAST),"70,8","47,41",500 dollars
+
+Ecuador,LATIN AMER. & CARIB,"47,8","23,66",3300 dollars
+
+Egypt,NORTHERN AFRICA,"78,8","32,59",4000 dollars
+
+El Salvador,LATIN AMER. & CARIB,"324,3","25,1",4800 dollars
+
+Equatorial Guinea,SUB-SAHARAN AFRICA,"19,3","85,13",2700 dollars
+
+Eritrea,SUB-SAHARAN AFRICA,"39,5","74,87",700 dollars
+
+Estonia,BALTICS,"29,3","7,87",12300 dollars
+
+Ethiopia,SUB-SAHARAN AFRICA,"66,3","95,32",700 dollars
+
+Faroe Islands,WESTERN EUROPE,"33,8","6,24",22000 dollars
+
+Fiji,OCEANIA,"49,6","12,62",5800 dollars
+
+Finland,WESTERN EUROPE,"15,5","3,57",27400 dollars
+
+France,WESTERN EUROPE,"111,3","4,26",27600 dollars
+
+French Guiana,LATIN AMER. & CARIB,"2,2","12,07",8300 dollars
+
+French Polynesia,OCEANIA,"65,9","8,44",17500 dollars
+
+Gabon,SUB-SAHARAN AFRICA,"5,3","53,64",5500 dollars
+
+"Gambia, The",SUB-SAHARAN AFRICA,"145,3","72,02",1700 dollars
+
+Gaza Strip,NEAR EAST,"3968,8","22,93",600 dollars
+
+Georgia,C.W. OF IND. STATES,"66,9","18,59",2500 dollars
+
+Germany,WESTERN EUROPE,"230,9","4,16",27600 dollars
+
+Ghana,SUB-SAHARAN AFRICA,"93,6","51,43",2200 dollars
+
+Gibraltar,WESTERN EUROPE,"3989,7","5,13",17500 dollars
+
+Greece,WESTERN EUROPE,"81,0","5,53",20000 dollars
+
+Greenland,NORTHERN AMERICA,"0,0","15,82",20000 dollars
+
+Grenada,LATIN AMER. & CARIB,"260,8","14,62",5000 dollars
+
+Guadeloupe,LATIN AMER. & CARIB,"254,4","8,6",8000 dollars
+
+Guam,OCEANIA,"316,1","6,94",21000 dollars
+
+Guatemala,LATIN AMER. & CARIB,"112,9","35,93",4100 dollars
+
+Guernsey,WESTERN EUROPE,"838,6","4,71",20000 dollars
+
+Guinea,SUB-SAHARAN AFRICA,"39,4","90,37",2100 dollars
+
+Guinea-Bissau,SUB-SAHARAN AFRICA,"39,9","107,17",800 dollars
+
+Guyana,LATIN AMER. & CARIB,"3,6","33,26",4000 dollars
+
+Haiti,LATIN AMER. & CARIB,"299,4","73,45",1600 dollars
+
+Honduras,LATIN AMER. & CARIB,"65,4","29,32",2600 dollars
+
+Hong Kong,ASIA (EX. NEAR EAST),"6355,7","2,97",28800 dollars
+
+Hungary,EASTERN EUROPE,"107,3","8,57",13900 dollars
+
+Iceland,WESTERN EUROPE,unknown,"3,31",30900 dollars
+
+India,ASIA (EX. NEAR EAST),"333,2","56,29",2900 dollars
+
+Indonesia,ASIA (EX. NEAR EAST),"127,9","35,6",3200 dollars
+
+Iran,ASIA (EX. NEAR EAST),"41,7","41,58",7000 dollars
+
+Iraq,NEAR EAST,"61,3","50,25",1500 dollars
+
+Ireland,WESTERN EUROPE,"57,8","5,39",29600 dollars
+
+Isle of Man,WESTERN EUROPE,"131,9","5,93",21000 dollars
+
+Israel,NEAR EAST,"305,8","7,03",19800 dollars
+
+Italy,WESTERN EUROPE,"193,0","5,94",26700 dollars
+
+Jamaica,LATIN AMER. & CARIB,"250,9","12,36",unknown
+
+Japan,ASIA (EX. NEAR EAST),"337,4","3,26",28200 dollars
+
+Jersey,WESTERN EUROPE,"785,2","5,24",24800 dollars
+
+Jordan,NEAR EAST,"64,0","17,35",4300 dollars
+
+Kazakhstan,C.W. OF IND. STATES,"5,6","29,21",6300 dollars
+
+Kenya,SUB-SAHARAN AFRICA,"59,6","61,47",1000 dollars
+
+Kiribati,OCEANIA,"130,0","48,52",800 dollars
+
+"Korea, North",ASIA (EX. NEAR EAST),"191,8","24,04",1300 dollars
+
+"Korea, South",ASIA (EX. NEAR EAST),"496,0","7,05",17800 dollars
+
+Kuwait,NEAR EAST,"135,7","9,95",19000 dollars
+
+Kyrgyzstan,C.W. OF IND. STATES,"26,3","35,64",1600 dollars
+
+Laos,ASIA (EX. NEAR EAST),"26,9","85,22",unknown
+
+Latvia,BALTICS,"35,2","9,55",10200 dollars
+
+Lebanon,NEAR EAST,"372,5","24,52",4800 dollars
+
+Lesotho,SUB-SAHARAN AFRICA,"66,6","84,23",3000 dollars
+
+Liberia,SUB-SAHARAN AFRICA,"27,3","128,87",1000 dollars
+
+Libya,NORTHERN AFRICA,"3,4","24,6",6400 dollars
+
+Liechtenstein,WESTERN EUROPE,"212,4","4,7",25000 dollars
+
+Lithuania,BALTICS,"55,0","6,89",11400 dollars
+
+Luxembourg,WESTERN EUROPE,"183,5","4,81",55100 dollars
+
+Macau,ASIA (EX. NEAR EAST),"16183,0","4,39",19400 dollars
+
+Macedonia,EASTERN EUROPE,"80,9","10,09",6700 dollars
+
+Madagascar,SUB-SAHARAN AFRICA,"31,7","76,83",800 dollars
+
+Malawi,SUB-SAHARAN AFRICA,"109,8","103,32",600 dollars
+
+Malaysia,ASIA (EX. NEAR EAST),unknown,"17,7",9000 dollars
+
+Maldives,ASIA (EX. NEAR EAST),"1196,7","56,52",3900 dollars
+
+Mali,SUB-SAHARAN AFRICA,"9,5","116,79",900 dollars
+
+Malta,WESTERN EUROPE,"1266,5","3,89",17700 dollars
+
+Marshall Islands,OCEANIA,"5,1","29,45",1600 dollars
+
+Martinique,LATIN AMER. & CARIB,"396,5","7,09",14400 dollars
+
+Mauritania,SUB-SAHARAN AFRICA,"3,1","70,89",1800 dollars
+
+Mauritius,SUB-SAHARAN AFRICA,"608,3","15,03",11400 dollars
+
+Mayotte,SUB-SAHARAN AFRICA,"538,1","62,4",2600 dollars
+
+Mexico,LATIN AMER. & CARIB,"54,5","20,91",9000 dollars
+
+"Micronesia, Fed. St.",OCEANIA,"153,9","30,21",2000 dollars
+
+Moldova,C.W. OF IND. STATES,"132,0","40,42",1800 dollars
+
+Monaco,WESTERN EUROPE,"16271,5","5,43",27000 dollars
+
+Mongolia,ASIA (EX. NEAR EAST),"1,8","53,79",1800 dollars
+
+Montserrat,LATIN AMER. & CARIB,"92,5","7,35",3400 dollars
+
+Morocco,NORTHERN AFRICA,"74,4","41,62",4000 dollars
+
+Mozambique,SUB-SAHARAN AFRICA,"24,6","130,79",1200 dollars
+
+Namibia,SUB-SAHARAN AFRICA,"2,5","48,98",7200 dollars
+
+Nauru,OCEANIA,"632,7","9,95",5000 dollars
+
+Nepal,ASIA (EX. NEAR EAST),"192,2","66,98",1400 dollars
+
+Netherlands,WESTERN EUROPE,"397,1","5,04",28600 dollars
+
+Netherlands Antilles,LATIN AMER. & CARIB,"231,0","10,03",11400 dollars
+
+New Caledonia,OCEANIA,"11,5","7,72",15000 dollars
+
+New Zealand,OCEANIA,"15,2","5,85",21600 dollars
+
+Nicaragua,LATIN AMER. & CARIB,"43,0","29,11",2300 dollars
+
+Niger,SUB-SAHARAN AFRICA,"9,9","121,69",800 dollars
+
+Nigeria,SUB-SAHARAN AFRICA,"142,7","98,8",900 dollars
+
+N. Mariana Islands,OCEANIA,"172,9","7,11",12500 dollars
+
+Norway,WESTERN EUROPE,"14,2","3,7",37800 dollars
+
+Oman,NEAR EAST,"14,6","19,51",13100 dollars
+
+Pakistan,ASIA (EX. NEAR EAST),"206,2","72,44",2100 dollars
+
+Palau,OCEANIA,"44,9","14,84",9000 dollars
+
+Panama,LATIN AMER. & CARIB,"40,8","20,47",6300 dollars
+
+Papua New Guinea,OCEANIA,"12,3","51,45",2200 dollars
+
+Paraguay,LATIN AMER. & CARIB,"16,0","25,63",4700 dollars
+
+Peru,LATIN AMER. & CARIB,"22,0","31,94",5100 dollars
+
+Philippines,ASIA (EX. NEAR EAST),"298,2","23,51",4600 dollars
+
+Poland,EASTERN EUROPE,"123,3","8,51",11100 dollars
+
+Portugal,WESTERN EUROPE,"114,8","5,05",18000 dollars
+
+Puerto Rico,LATIN AMER. & CARIB,"284,8","8,24",16800 dollars
+
+Qatar,NEAR EAST,"77,4","18,61",21500 dollars
+
+Reunion,SUB-SAHARAN AFRICA,"312,9","7,78",5800 dollars
+
+Romania,EASTERN EUROPE,"93,9","26,43",7000 dollars
+
+Russia,C.W. OF IND. STATES,"8,4","15,39",8900 dollars
+
+Rwanda,SUB-SAHARAN AFRICA,"328,4","91,23",1300 dollars
+
+Saint Helena,SUB-SAHARAN AFRICA,"18,2",19,2500 dollars
+
+Saint Kitts & Nevis,LATIN AMER. & CARIB,"149,9","14,49",8800 dollars
+
+Saint Lucia,LATIN AMER. & CARIB,"273,5","13,53",5400 dollars
+
+St Pierre & Miquelon,NORTHERN AMERICA,"29,0","7,54",6900 dollars
+
+Saint Vincent and the Grenadines,LATIN AMER. & CARIB,"303,0","14,78",2900 dollars
+
+Samoa,OCEANIA,"60,1","27,71",5600 dollars
+
+San Marino,WESTERN EUROPE,"479,5","5,73",34600 dollars
+
+Sao Tome & Principe,SUB-SAHARAN AFRICA,"193,2","43,11",1200 dollars
+
+Saudi Arabia,NEAR EAST,unknown,"13,24",11800 dollars
+
+Senegal,SUB-SAHARAN AFRICA,"61,1","55,51",1600 dollars
+
+Serbia,EASTERN EUROPE,"106,3","12,89",2200 dollars
+
+Seychelles,SUB-SAHARAN AFRICA,"179,2","15,53",unknown
+
+Sierra Leone,SUB-SAHARAN AFRICA,"83,7","143,64",500 dollars
+
+Singapore,ASIA (EX. NEAR EAST),"6482,2","2,29",23700 dollars
+
+Slovakia,EASTERN EUROPE,"111,4","7,41",13300 dollars
+
+Slovenia,EASTERN EUROPE,"99,2","4,45",19000 dollars
+
+Solomon Islands,OCEANIA,"19,4","21,29",1700 dollars
+
+Somalia,SUB-SAHARAN AFRICA,"13,9","116,7",500 dollars
+
+South Africa,SUB-SAHARAN AFRICA,"36,2","61,81",10700 dollars
+
+Spain,WESTERN EUROPE,"80,0","4,42",22000 dollars
+
+Sri Lanka,ASIA (EX. NEAR EAST),"308,2","14,35",3700 dollars
+
+Sudan,SUB-SAHARAN AFRICA,"16,5","62,5",1900 dollars
+
+Suriname,LATIN AMER. & CARIB,"2,7","23,57",400000 dollars
+
+Swaziland,SUB-SAHARAN AFRICA,"65,5","69,27",4900 dollars
+
+Sweden,WESTERN EUROPE,"20,0","2,77",26800 dollars
+
+Switzerland,WESTERN EUROPE,"182,2","4,39",32700 dollars
+
+Syria,NEAR EAST,"102,0","29,53",3300 dollars
+
+Taiwan,ASIA (EX. NEAR EAST),"640,3","6,4",23400 dollars
+
+Tajikistan,C.W. OF IND. STATES,"51,2","110,76",1000 dollars
+
+Tanzania,SUB-SAHARAN AFRICA,"39,6","98,54",600 dollars
+
+Thailand,ASIA (EX. NEAR EAST),"125,7","20,48",7400 dollars
+
+Togo,SUB-SAHARAN AFRICA,"97,7","66,61",1500 dollars
+
+Tonga,OCEANIA,"153,3","12,62",2200 dollars
+
+Trinidad & Tobago,LATIN AMER. & CARIB,"207,9","24,31",9500 dollars
+
+Tunisia,NORTHERN AFRICA,"62,2","24,77",6900 dollars
+
+Turkey,NEAR EAST,"90,2","41,04",6700 dollars
+
+Turkmenistan,C.W. OF IND. STATES,"10,3","73,08",5800 dollars
+
+Turks & Caicos Is,LATIN AMER. & CARIB,"49,2","15,67",9600 dollars
+
+Tuvalu,OCEANIA,"454,2","20,03",1100 dollars
+
+Uganda,SUB-SAHARAN AFRICA,"119,5","67,83",1400 dollars
+
+Ukraine,C.W. OF IND. STATES,"77,4","20,34",5400 dollars
+
+United Arab Emirates,NEAR EAST,"31,4","14,51",23200 dollars
+
+United Kingdom,WESTERN EUROPE,"247,6","5,16",27700 dollars
+
+United States,NORTHERN AMERICA,"31,0","6,5",37800 dollars
+
+Uruguay,LATIN AMER. & CARIB,"19,5","11,95",12800 dollars
+
+Uzbekistan,C.W. OF IND. STATES,"61,0","71,1",1700 dollars
+
+Vanuatu,OCEANIA,"17,1","55,16",2900 dollars
+
+Venezuela,LATIN AMER. & CARIB,"28,2","22,2",4800 dollars
+
+Vietnam,ASIA (EX. NEAR EAST),"256,1","25,95",2500 dollars
+
+Virgin Islands,LATIN AMER. & CARIB,"56,9","8,03",17200 dollars
+
+Wallis and Futuna,OCEANIA,"58,5",,3700 dollars
+
+West Bank,NEAR EAST,"419,9","19,62",800 dollars
+
+Western Sahara,NORTHERN AFRICA,"1,0",,
+
+Yemen,NEAR EAST,"40,6","61,5",800 dollars
+
+Zambia,SUB-SAHARAN AFRICA,"15,3","88,29",800 dollars
+
+Zimbabwe,SUB-SAHARAN AFRICA,"31,3","67,69",1900 dollars
+
