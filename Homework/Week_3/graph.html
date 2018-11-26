@@ -1,0 +1,255 @@
+<!-- Name: Thomas Franx -->
+<!-- Student number: 1248564 -->
+<!-- Creates a graph using JavaScript and Canvas -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leeftijdsverwachten mannen en vrouwen in Nederland</title>
+    <script>
+      var fileName = "output.json";
+      var txtFile = new XMLHttpRequest();
+
+      txtFile.onreadystatechange = function() {
+        if (txtFile.readyState === 4 && txtFile.status == 200) {
+
+          // parameters = [canvasSize, domain, range, ticks, border]
+          const parameters = [[1200, 550], [1861, 2006], [0, 100], [20, 10], 75];
+          const data = JSON.parse(txtFile.responseText);
+
+          createTable(parameters);
+          drawLine(data, parameters, 2);
+        }
+      }
+      txtFile.open("GET", fileName);
+      txtFile.send();
+
+      function createTable(parameters){
+        var canvas = document.getElementById('graph');
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+
+          // create variables for table
+          const canvasSize = parameters[0];
+          const domain = parameters[1];
+          const range = parameters[2];
+          const ticks = parameters[3];
+          const border = parameters[4];
+
+          const canvasWidth = canvasSize[0];
+          const canvasHeight = canvasSize[1];
+
+          const domainMin = 0;
+          const domainMax = domain[1] - domain[0];
+
+          const rangeMin = 0;
+          const rangeMax = range[1] - range[0];
+
+          // create transformation function
+          const xTransform = createTransform([domainMin, domainMax], [0, canvasWidth]); // border hier nog vanaf?
+          const yTransform = createTransform([rangeMin, rangeMax], [0, canvasHeight]); // border hier nog vanaf?
+
+          // create variables for axis lines
+          const xAxisStart = xTransform(domainMin) + border;
+          const xAxisEnd = xTransform(domainMax) - border;
+
+          const yAxisStart = yTransform(rangeMax) - border;
+          const yAxisEnd = yTransform(rangeMin) + border;
+
+          // create axis
+          ctx.beginPath();
+          ctx.moveTo(xAxisEnd, yAxisStart);
+          ctx.lineTo(xAxisStart, yAxisStart);
+          ctx.lineTo(xAxisStart, yAxisEnd);
+          ctx.stroke();
+
+          // variables for setting axis values
+          const xStep = ticks[0];
+          const yStep = ticks[1];
+
+          // calculate distance between ticks
+          const xTicks = xTransform(ticks[0]) - ((2 * border) / (domainMax / xStep));
+          const yTicks = yTransform(ticks[1]) - ((2 * border) / (rangeMax / yStep));
+
+          // arrays for storing x-axis and y-axis values
+          const xValues = [];
+          const yValues = [];
+
+          // create and store x-axis values
+          for (var xValue = domain[0]; xValue <= domain[1]; xValue += xStep){
+            xValues.push(xValue);
+          }
+
+          // create and stor y-axis values
+          for (var yValue = rangeMin; yValue <= rangeMax; yValue += yStep){
+            yValues.push(yValue);
+          }
+
+          // create x-axis ticks and reference lines
+          for (var tickPlace = xAxisStart; tickPlace <= xAxisEnd; tickPlace += xTicks) {
+            ctx.moveTo(tickPlace, yAxisStart);
+            ctx.lineTo(tickPlace, yAxisStart + 10);
+            ctx.fillText(xValues.shift(), tickPlace - 11, yAxisStart + 20);
+            ctx.stroke();
+          }
+
+          // create y-axis ticks
+          for (var tickPlace = yAxisStart; tickPlace >= yAxisEnd; tickPlace -= yTicks) {
+
+            ctx.lineWidth = 0.5;
+            ctx.beginPath();
+            ctx.moveTo(xAxisEnd, tickPlace);
+            ctx.lineTo(xAxisStart, tickPlace);
+            ctx.stroke();
+
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(xAxisStart, tickPlace);
+            ctx.lineTo(xAxisStart - 10, tickPlace);
+            ctx.stroke();
+
+            ctx.fillText(yValues.shift(), xAxisStart - 27, tickPlace + 3);
+          }
+        }
+      }
+
+
+      function createTransform(domain, range){
+
+        // set variables
+        var domain_min = domain[0];
+        var domain_max = domain[1];
+        var range_min = range[0];
+        var range_max = range[1];
+
+        // formulas to calculate the alpha and the beta
+       	var alpha = (range_max - range_min) / (domain_max - domain_min);
+        var beta = range_max - alpha * domain_max;
+
+        // returns the function for the linear transformation (y= a * x + b)
+        return function(x){
+        return alpha * x + beta;
+        }
+      }
+
+
+      function drawLine(data, parameters, numberOfLines) {
+        var canvas = document.getElementById('graph');
+        if (canvas.getContext) {
+          var ctx = canvas.getContext('2d');
+
+          // create variables for drawing lines
+          const canvasSize = parameters[0];
+          const domain = parameters[1];
+          const range = parameters[2];
+          const ticks = parameters[3];
+          const border = parameters[4];
+
+          const canvasWidth = canvasSize[0];
+          const canvasHeight = canvasSize[1];
+
+          const domainMin = 0;
+          const domainMax = domain[1] - domain[0];
+
+          const rangeMin = 0;
+          const rangeMax = range[1] - range[0];
+
+          // list for storing coordinates
+          coordinatesList = [];
+
+          // create transformation function
+          const xTransform = createTransform([domainMin, domainMax], [0, canvasWidth - 2 * border]);
+          const yTransform = createTransform([rangeMin, rangeMax], [0, canvasHeight - 2 * border]);
+
+          // prepare data for drawin lines
+          for (var year in data){
+            coordinates = [];
+
+            for (var value in data[year]){
+              var tempString = data[year][value];
+
+              if (tempString.indexOf("tot") !== -1) {
+                var date = parseInt(tempString.slice(0, 4));
+                date = xTransform(date - domain[0]);
+                coordinates.push(date);
+              }else{
+                var age = parseInt(tempString);
+                age = yTransform(age - range[0]);
+                coordinates.push(yTransform(rangeMax) - age);
+              }
+            }
+            coordinatesList.push(coordinates);
+          }
+
+          // list with color codes red, blue, green, black
+          const colorCodes = ["#ff0000", "#0000ff", "#00ff00"];
+
+          // create variable for legend
+          const yLegend = 374;
+
+          // loop trough number of lines
+          for (var line = 1; line <= numberOfLines; line++) {
+            ctx.beginPath();
+            ctx.moveTo(coordinatesList[0][0] + border, coordinatesList[0][line] + border);
+
+            // loop trough line data
+            for (var draw = 1; draw < coordinatesList.length; draw++) {
+              ctx.lineTo(coordinatesList[draw][0] + border, coordinatesList[draw][line] + border);
+            }
+
+            // set color and reate line
+            ctx.strokeStyle = colorCodes[colorCodes.length % (line)];
+            ctx.stroke();
+          }
+
+          // set title
+          ctx.font = "bold 14px sans-serif";
+          ctx.fillText("Leeftijdsverwachting in Nederland bij geboorte in de periode 1861-2006", 355, 50);
+
+          // create legend background
+          ctx.fillStyle="#fff";
+          ctx.fillRect(1025, 365, 100, 60);
+
+          // create legend outlining
+          ctx.strokeStyle="#000";
+          ctx.strokeRect(1025, 365, 100, 60);
+
+          // create legend content
+          ctx.fillStyle="#000";
+          ctx.font="bold 12px sans-serif";
+          ctx.fillText("Legenda:", 1042, 383);
+          ctx.fillText("Mannen", 1057, 398);
+          ctx.fillText("Vrouwen", 1057, 413);
+
+          // create Male legend line
+          ctx.strokeStyle = "#ff0000";
+          ctx.beginPath();
+          ctx.moveTo(1042, 395);
+          ctx.lineTo(1052, 395);
+          ctx.stroke();
+
+          // create female legend line
+          ctx.strokeStyle = "#0000ff";
+          ctx.beginPath();
+          ctx.moveTo(1042, 410);
+          ctx.lineTo(1052, 410);
+          ctx.stroke();
+
+          ctx.fillText("Jaartallen", 555, 530);
+          ctx.rotate(-90 * Math.PI / 180);
+          ctx.fillText("Leeftijdsverwachting in jaren", -357, 30);
+        }
+      }
+
+    </script>
+
+    <style type = "text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+
+    <body onload="createTable(); draw();">
+      <canvas id = "graph" width="1200" height="550"></canvas>
+    </body>
+
+</html>

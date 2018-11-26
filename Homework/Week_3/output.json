@@ -1,8 +1,42 @@
-{"periode": 1861, "levensverwachting mannen": "36.46", "levensverwachting vrouwen": "38.24"}
-{"periode": 1881, "levensverwachting mannen": "41.41", "levensverwachting vrouwen": "43.98"}
-{"periode": 1901, "levensverwachting mannen": "49.35", "levensverwachting vrouwen": "52.21"}
-{"periode": 1921, "levensverwachting mannen": "60.78", "levensverwachting vrouwen": "62.25"}
-{"periode": 1941, "levensverwachting mannen": "59.70", "levensverwachting vrouwen": "65.11"}
-{"periode": 1961, "levensverwachting mannen": "71.16", "levensverwachting vrouwen": "75.88"}
-{"periode": 1981, "levensverwachting mannen": "72.87", "levensverwachting vrouwen": "79.51"}
-{"periode": 2006, "levensverwachting mannen": "78.25", "levensverwachting vrouwen": "82.35"}
+{
+    "jaar1861": {
+        "Perioden": "1861 tot 1866",
+        "Mannen": "36.46",
+        "Vrouwen": "38.24"
+    },
+    "jaar1881": {
+        "Perioden": "1881 tot 1886",
+        "Mannen": "41.41",
+        "Vrouwen": "43.98"
+    },
+    "jaar1901": {
+        "Perioden": "1901 tot 1906",
+        "Mannen": "49.35",
+        "Vrouwen": "52.21"
+    },
+    "jaar1921": {
+        "Perioden": "1921 tot 1926",
+        "Mannen": "60.78",
+        "Vrouwen": "62.25"
+    },
+    "jaar1941": {
+        "Perioden": "1941 tot 1946",
+        "Mannen": "59.70",
+        "Vrouwen": "65.11"
+    },
+    "jaar1961": {
+        "Perioden": "1961 tot 1966",
+        "Mannen": "71.16",
+        "Vrouwen": "75.88"
+    },
+    "jaar1981": {
+        "Perioden": "1981 tot 1986",
+        "Mannen": "72.87",
+        "Vrouwen": "79.51"
+    },
+    "jaar2006": {
+        "Perioden": "2006 tot 2011",
+        "Mannen": "78.25",
+        "Vrouwen": "82.35"
+    }
+}
