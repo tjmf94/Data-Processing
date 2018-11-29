@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style type="text/css">
+
+            t.title {
+              font: bold 30px Verdana;
+              text-align: center;
+              color: grey;
+            }
+
+            p.intro {
+              font-family: "Verdana";
+              font-size: 14px;
+              color: grey;
+           }
+
+           p.description {
+             font-family: "Verdana";
+             font-size: 14px;
+             color: grey;
+           }
+
+           text.AxisTitle {
+            font: 14px Verdana;
+            color: grey;
+           }
+
+            .d3-tip {
+              line-height: 1;
+              font-weight: bold;
+              padding: 12px;
+              background: rgba(0, 0, 0, 0.8);
+              color: #fff;
+              border-radius: 2px;
+            }
+
+            /* Creates a small triangle extender for the tooltip */
+            .d3-tip:after {
+              box-sizing: border-box;
+              display: inline;
+              font-size: 10px;
+              width: 100%;
+              line-height: 1;
+              color: rgba(0, 0, 0, 0.8);
+              content: "\25BC";
+              position: absolute;
+              text-align: center;
+            }
+
+            /* Style northward tooltips differently */
+            .d3-tip.n:after {
+              margin: -1px 0 0 0;
+              top: 100%;
+              left: 0;
+
+		    </style>
+    </head>
+    <body>
+        <script type="text/javascript" src="d3/d3.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+        <script type="text/javascript">
+
+          // insert title and introduction
+          d3.select("title").text("D3 Bar Chart");
+          d3.select("body").append("t").attr("class", "title").text("Energy usage in the European Union");
+
+          const intro = "This Bar Chart is made by Thomas Franx(s12485640), in an attempt to master the art of Data Visualization";
+          d3.select("body").append("p").attr("class", "intro").text(intro);
+
+          const description = "The Bar Chart below shows the average amount of energy that households in the European Union use per year, for the period 2000 - 2016. The total energy used is expressed in kilograms of oil. The data is downloaded from ec.europa.eu/eurostat. This visualization is made using the D3 library for JavaScript.";
+          d3.select("body").append("p").attr("class", "description").text(description);
+
+          // enter name of different area to see data
+          createBarChart("output.json", "Belgium", 700, 400, 1);
+
+          function createBarChart(datafile, area, width, height, barPadding){
+
+            // lists for JSON data
+            var usage = [];
+            var years = [];
+
+            // parse JSON and store dat in lists
+            d3.json(datafile).then(function(data) {
+
+              for (year in data[area]){
+                usage.push(parseInt(data[area][year]));
+                years.push(parseInt(year));
+              }
+
+              // erase last non-nummeric list value
+              usage.pop();
+              years.pop();
+
+              // create padding for axis values
+              padding = 50;
+
+              // create svg element
+              var svg = d3.select("body")
+                          .append("svg")
+                          .attr("width", width)
+                          .attr("height", height);
+
+              // determine year domain
+              const firstYear = d3.min(years);
+              const lastYear = d3.max(years);
+
+              // create scale transformer for x-axis values
+              var xScale = d3.scaleLinear()
+                             .domain([firstYear, lastYear])
+                             .range([padding, width]);
+
+              // determine usage domain
+              const usageMax = d3.max(usage);
+
+              // create scale transformer for y-axis values
+              var yScale = d3.scaleLinear()
+                             .domain([0, usageMax])
+                             .range([height, padding]);
+
+              // prepare interactivity, along with style classes taken from http://bl.ocks.org/Caged/6476579.
+              var tip = d3.tip()
+                          .attr('class', 'd3-tip')
+                          .offset([-10, 0])
+                          .html(function(d, i) {
+                           return "<strong>In this year the average household used </strong> <span style='color:red'>" + d + "</span> kilograms of oil.";
+                          });
+
+              svg.call(tip);
+
+              // create barchart
+              var rect = svg.selectAll("rect")
+                            .data(usage)
+                            .enter()
+                            .append("rect")
+                            .attr("x", function(d, i) {
+                                return xScale(i + firstYear);
+                            })
+                            .attr("y", function (d) {
+                              return yScale(d) - padding;
+                            })
+                            .attr("width", (width - padding) / usage.length - barPadding)
+                            .attr("height", function (d) {
+                                if (isNaN(d)){
+                                  return 0
+                                }else{
+                                  return height - yScale(d)
+                                }
+                            })
+                            .attr("fill", "teal")
+                            .on('mouseover', tip.show)
+                            .on('mouseout', tip.hide);
+
+              // create x-axis
+              var xAxis = d3.axisBottom()
+                            .scale(xScale);
+
+              // add css class and push down
+              svg.append("g")
+                 .attr("class", "axis")
+                 .attr("transform", "translate(0," + (height - padding) + ")")
+                 .call(xAxis);
+
+              // does not work...
+              xAxis.tickValues(years);
+
+              // create y-axis
+              var yAxis = d3.axisLeft()
+                            .scale(yScale);
+
+              // add css class and push to left
+              svg.append("g")
+                 .attr("class", "axis")
+                 .attr("transform", "translate(" + padding + "," + (-padding) + ")")
+                 .call(yAxis);
+
+             // add x-axis title
+             svg.append('text')
+                .attr('class', 'AxisTitle')
+                .attr('x', width * 0.54)
+                .attr('y', height - (padding / 5))
+                .attr('text-anchor', 'middle')
+                .text('Years (2000 - 2016)');
+
+             // add y-axis title
+             svg.append('text')
+                .attr('class', 'AxisTitle')
+                .attr('x', -170)
+                .attr('y', 15)
+                .attr("transform", "rotate(-90)")
+                .attr('text-anchor', 'middle')
+                .text('Kilograms of oil used');
+              });
+            }
+        </script>
+    </body>
+</html>
