@@ -31,4 +31,4 @@ Created a scatterplot using D3 library for JavaScript, containing the rate of wo
 
 ------
 
-https://tjmf94.github.io/Data-Processing/
+Github Pages: https://tjmf94.github.io/Data-Processing/
