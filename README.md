@@ -27,7 +27,7 @@ Created a bar chart using the D3 library for JavaScript, containing the average 
 ------
 
 ### Week 5: D3 Scatterplot
-Created a scatterplot using D3 library for JavaScript, containing the rate of women involved in scientifical research jobs. The link to this project can be found at the bottom of this page.
+Created a scatterplot using D3 library for JavaScript, containing the rate of women involved in scientifical research jobs and Consumer Confidence. The link to this project can be found at the bottom of this page.
 
 ------
 
