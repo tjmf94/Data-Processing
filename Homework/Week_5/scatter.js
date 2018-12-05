@@ -118,9 +118,7 @@ function drawDots(data, year, width, height){
      .enter()
      .append("circle")
      .attr("cx", function(d) {
-       if isNumber(d[2]){
-         return xScale(d[2]);
-       }
+       return xScale(d[2]);
      })
      .attr("cy", function(d) {
        return yScale(d[1]);
