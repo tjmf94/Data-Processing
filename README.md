@@ -31,4 +31,9 @@ Created a scatterplot using D3 library for JavaScript, containing the rate of wo
 
 ------
 
+### Week 6: D3 Linked Views
+Created a world map and a Bar Chart, containing the Happy Planet Index and it's four elements.
+
+------
+
 Github Pages: https://tjmf94.github.io/Data-Processing/

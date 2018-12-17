@@ -19,9 +19,9 @@ def convert(input_file, sort_by, header_line, last_data_line):
             key = row[sort_by]
             data[key] = row
 
-    with open("output.json", "w") as output_file:
+    with open("country_codes.json", "w") as output_file:
         output_file.write(json.dumps(data, indent=4))
 
 
 if __name__ == "__main__":
-    convert("EU energy consumption per household (2000-2016).csv", "area", 3, 43)
+    convert("country codes.csv", "name", 1, 250)
