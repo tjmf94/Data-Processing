@@ -260,7 +260,7 @@ window.onload = function() {
 
   // set width and height
   var chartWidth = 960;
-  var chartHeight = 600;
+  var chartHeight = 300;
 
   // calculate margins for bars
   var chartWitdthExPadding = chartWidth - chartMargin.left - chartMargin.right;
